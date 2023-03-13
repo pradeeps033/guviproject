@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles1.css">
+    <script src="assets/jquery.js"></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2 class="text-center">User Profile</h2>
+      <form action="php/profile.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob">
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" name="age" placeholder="Enter dob to get age" readonly >
+          </div>          
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email"  placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter only 10 digits" required>
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea class="form-control" id="bio" name="bio" rows="3" placeholder="Write about yourself" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>
