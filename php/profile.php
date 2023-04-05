@@ -1,7 +1,7 @@
 <?php
 require_once 'C:\xampp\htdocs\guvi\assets\mongodbcon\vendor\autoload.php';
 // Creating Connection
-$client = new \MongoDB\Client('mongodb+srv://pradeepdeeps033:Simple%40033@cluster0.thtfona.mongodb.net/test');
+$client = new \MongoDB\Client('mongodb://localhost');
 $db = $client->user_profiles;
 
 // Creating Document 
